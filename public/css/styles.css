@@ -1,7 +1,7 @@
 html {
   background-color: #E4E9FD;
   /* background-image: -webkit-linear-gradient(65deg, #B2C8DF 50%, #E4E9FD 50%); */
-  background-image: url("../fundo.jpeg");
+  background-image: linear-gradient(25deg, #053742 , #4B6587);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -75,10 +75,9 @@ form.item {
   background-color: #748DA6;
   color: #fff;
   font-size: 30px;
-  padding-bottom: 2px;
   border-width: 0;
   cursor: pointer;
-  box-shadow: 10px 5px 15px  grey;
+  box-shadow: 10px 5px 15px  #CFD2CF;
 
 
 
@@ -119,4 +118,13 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+.text-footer{
+  color: white;
+  font-family:'IBM Plex Mono', monospace;
+  font-size: 16px;
+  padding-top: 0;
+
+
 }
