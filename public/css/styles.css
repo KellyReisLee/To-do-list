@@ -1,6 +1,7 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  /* background-image: -webkit-linear-gradient(65deg, #B2C8DF 50%, #E4E9FD 50%); */
+  background-image: url("../fundo.jpeg");
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -14,20 +15,29 @@ h1 {
   max-width: 400px;
   margin: 50px auto;
   background: white;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 5, 3, 0.1);
+
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #748DA6;
   text-align: center;
+  font-size: 30px;
 }
 
 .item {
-  min-height: 70px;
+  min-height: 90px;
+  background-color: #EEEEEE;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #F1F1F1;
+  border-radius: 10px;
+}
+
+.letter{
+  font-family:'IBM Plex Mono', monospace;
+  font-size: 20px;
 }
 
 .item:last-child {
@@ -36,7 +46,8 @@ h1 {
 
 input:checked+p {
   text-decoration: line-through;
-  text-decoration-color: #A683E3;
+  text-decoration-color: #748DA6;
+  font-family:'IBM Plex Mono', monospace;
 }
 
 input[type="checkbox"] {
@@ -53,7 +64,7 @@ p {
 
 form.item {
   text-align: center;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .btn-plus {
@@ -61,11 +72,20 @@ form.item {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  background-color: #748DA6;
   color: #fff;
   font-size: 30px;
-  padding-bottom: 6px;
+  padding-bottom: 2px;
   border-width: 0;
+  cursor: pointer;
+  box-shadow: 10px 5px 15px  grey;
+
+
+
+}
+
+.btn-plus:active{
+  box-shadow: none;
 }
 
 input[type="text"] {
@@ -74,18 +94,24 @@ input[type="text"] {
   top: 10px;
   border: none;
   background: transparent;
-  font-size: 20px;
   font-weight: 200;
-  width: 313px;
+  width: 315px;
+  padding-left: 20px;
+  font-size: 30px;
+  font-family:'IBM Plex Mono', monospace;
 }
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #A683E3;
+  box-shadow: inset 0 -3px 0 0 #748DA6;
+  font-size: 25px;
+  font-family:'IBM Plex Mono', monospace;
+
+
 }
 
 ::placeholder {
-  color: grey;
+  color: #748DA6;
   opacity: 1;
 }
 
